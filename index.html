@@ -12,7 +12,7 @@
             font-family: 'Roboto Slab', serif; /* Elegant font */
             margin: 0;
             padding: 0;
-            background: linear-gradient(135deg, #ffccdd, #ffeb3b); /* Gold-pink gradient */
+            background: linear-gradient(135deg, #d8bfd8, #9370db); /* Light purple gradient */
             color: #333;
             text-align: center;
             animation: gradientBG 5s infinite alternate; /* Smooth gradient animation */
@@ -28,10 +28,10 @@
         }
 
         header {
-            background: rgba(255, 204, 221, 0.8); /* Transparent pink */
+            background: rgba(216, 191, 216, 0.8); /* Transparent light purple */
             color: white;
             padding: 1em 0;
-            border-bottom: 2px solid #ffeb3b; /* Gold border */
+            border-bottom: 2px solid #9370db; /* Darker purple border */
         }
 
         h1 {
@@ -83,6 +83,60 @@
             margin: 8px 0;
         }
 
+        /* Favorite Foods Section */
+        .food-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+
+        .food-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Movies Section */
+        .movie-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+
+        .movie-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Series Section */
+        .series-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+
+        .series-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
         /* Music Player */
         .music-player {
             margin-top: 20px;
@@ -101,7 +155,7 @@
         }
 
         .play-pause-buttons button {
-            background: #ffeb3b;
+            background: #9370db;
             color: white;
             border: none;
             padding: 10px 20px;
@@ -112,54 +166,20 @@
         }
 
         .play-pause-buttons button:hover {
-            background: #ffe082; /* Lighter gold on hover */
+            background: #8a6bbf; /* Lighter purple on hover */
         }
 
-        /* Floating Hearts (Girly Touch) */
-        .floating-hearts {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: -1;
-        }
-
-        .heart {
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            background: url('heart.png') no-repeat center center / contain;
-            animation: floatHeart 5s infinite ease-in-out;
-        }
-
-        @keyframes floatHeart {
-            0% {
-                transform: translateY(0) rotate(0deg);
-                opacity: 0;
-            }
-            50% {
-                transform: translateY(-100px) rotate(360deg);
-                opacity: 1;
-            }
-            100% {
-                transform: translateY(0) rotate(720deg);
-                opacity: 0;
-            }
+        /* Game Section */
+        .game-section {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
     </style>
 </head>
 <body>
-    <!-- Floating Hearts Background -->
-    <div class="floating-hearts">
-        <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
-        <div class="heart" style="left: 30%; animation-delay: 1s;"></div>
-        <div class="heart" style="left: 50%; animation-delay: 2s;"></div>
-        <div class="heart" style="left: 70%; animation-delay: 3s;"></div>
-        <div class="heart" style="left: 90%; animation-delay: 4s;"></div>
-    </div>
-
     <header>
         <h1>Welcome to My Personal Webpage!</h1>
         <p>Hi, I'm <strong>Zeynab Vafaei Sadr</strong>. Let's dive into my world!</p>
@@ -179,18 +199,62 @@
 
         <h2>Favorite Foods</h2>
         <p>Here are some of my favorite dishes:</p>
-        <ul>
-            <li>Kabab Koobideh</li>
-            <li>Zereshk Polo</li>
-            <li>Spaghetti</li>
-        </ul>
+        <div>
+            <div class="food-item">
+                <img src="zereshkpoio.jpg" alt="Zereshk Polo">
+                <h3>Zereshk Polo</h3>
+            </div>
+            <div class="food-item">
+                <img src="kabab.jpg" alt="Kabab Koobideh">
+                <h3>Kabab Koobideh</h3>
+            </div>
+            <div class="food-item">
+                <img src="spaghetti.jpg" alt="Spaghetti">
+                <h3>Spaghetti</h3>
+            </div>
+        </div>
 
-        <h2>Hobbies</h2>
-        <p>In my free time, I enjoy:</p>
-        <ul>
-            <li>Listening to podcasts</li>
-            <li>Exploring new music</li>
-        </ul>
+        <h2>Favorite Movies</h2>
+        <p>Here are some of my favorite movies:</p>
+        <div>
+            <div class="movie-item">
+                <img src="pianist.jpg" alt="The Pianist">
+                <h3>The Pianist</h3>
+            </div>
+            <div class="movie-item">
+                <img src="lifeisbeautiful.jpg" alt="Life is Beautiful">
+                <h3>Life is Beautiful</h3>
+            </div>
+            <div class="movie-item">
+                <img src="schindlerlist.jpg" alt="Schindler's List">
+                <h3>Schindler's List</h3>
+            </div>
+            <div class="movie-item">
+                <img src="greenmile.jpg" alt="The Green Mile">
+                <h3>The Green Mile</h3>
+            </div>
+            <div class="movie-item">
+                <img src="greenbook.jpg" alt="Green Book">
+                <h3>Green Book</h3>
+            </div>
+        </div>
+
+        <h2>Favorite TV Series</h2>
+        <p>Here are some of my favorite TV series:</p>
+        <div>
+            <div class="series-item">
+                <img src="maisel.jpg" alt="The Marvelous Mrs. Maisel">
+                <h3>The Marvelous Mrs. Maisel</h3>
+            </div>
+            <div class="series-item">
+                <img src="friends.jpg" alt="Friends">
+                <h3>Friends</h3>
+            </div>
+            <div class="series-item">
+                <img src="us.jpg" alt="This Is Us">
+                <h3>This Is Us</h3>
+            </div>
+        </div>
 
         <!-- Music Player -->
         <div class="music-player">
@@ -203,6 +267,12 @@
                 <button onclick="togglePlayPause(true)">Play</button>
                 <button onclick="togglePlayPause(false)">Pause</button>
             </div>
+        </div>
+
+        <!-- Game Section -->
+        <div class="game-section">
+            <h3>Play a Fun Game!</h3>
+            <iframe src="https://www.miniclip.com/games/dummy/en/" width="400" height="400" frameborder="0"></iframe>
         </div>
     </div>
 
