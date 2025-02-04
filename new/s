@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeynab Vafaei Sadr - Personal Webpage</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Caveat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Roboto Slab', serif; /* Elegant font */
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #d8bfd8, #9370db); /* Light purple gradient */
+            color: #333;
+            text-align: center;
+            animation: gradientBG 5s infinite alternate; /* Smooth gradient animation */
+        }
+
+        @keyframes gradientBG {
+            0% {
+                background-position: 0% 50%;
+            }
+            100% {
+                background-position: 100% 50%;
+            }
+        }
+
+        header {
+            background: rgba(216, 191, 216, 0.8); /* Transparent light purple */
+            color: white;
+            padding: 1em 0;
+            border-bottom: 2px solid #9370db; /* Darker purple border */
+        }
+
+        h1 {
+            font-family: 'Caveat', cursive; /* Fun, girly font for title */
+            margin: 0;
+            font-size: 3em;
+            letter-spacing: 2px;
+        }
+
+        .content {
+            padding: 20px;
+            max-width: 800px; /* Restrict width for better alignment */
+            margin: 0 auto;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Profile Picture */
+        .profile-picture {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Circular image */
+            border: 4px solid #fff; /* White border */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+            margin: 20px auto;
+        }
+
+        /* Text Styling */
+        p {
+            font-size: 1.2em;
+            line-height: 1.6; /* Improved readability */
+            margin: 10px 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 1.1em;
+            margin: 8px 0;
+        }
+
+        /* Favorite Foods Section */
+        .food-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+
+        .food-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Movies Section */
+        .movie-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+
+        .movie-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Series Section */
+        .series-item {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            width: 200px;
+            text-align: center;
+        }
+
+        .series-item img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        /* Music Player */
+        .music-player {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Play/Pause Buttons */
+        .play-pause-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .play-pause-buttons button {
+            background: #9370db;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background 0.3s ease;
+        }
+
+        .play-pause-buttons button:hover {
+            background: #8a6bbf; /* Lighter purple on hover */
+        }
+
+        /* Game Section */
+        .game-section {
+            margin-top: 20px;
+            padding: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Personal Webpage!</h1>
+        <p>Hi, I'm <strong>Zeynab Vafaei Sadr</strong>. Let's dive into my world!</p>
+    </header>
+
+    <div class="content">
+        <!-- Profile Picture -->
+        <img src="image.jpg" alt="Zeynab Vafaei Sadr" class="profile-picture">
+
+        <h2>About Me</h2>
+        <p>I love spending time on activities that bring me joy, such as:</p>
+        <ul>
+            <li>Exercise</li>
+            <li>Cooking</li>
+            <li>Baking</li>
+        </ul>
+
+        <h2>Favorite Foods</h2>
+        <p>Here are some of my favorite dishes:</p>
+        <div>
+            <div class="food-item">
+                <img src="zereshkpoio.jpg" alt="Zereshk Polo">
+                <h3>Zereshk Polo</h3>
+            </div>
+            <div class="food-item">
+                <img src="kabab.jpg" alt="Kabab Koobideh">
+                <h3>Kabab Koobideh</h3>
+            </div>
+            <div class="food-item">
+                <img src="spaghetti.jpg" alt="Spaghetti">
+                <h3>Spaghetti</h3>
+            </div>
+        </div>
+
+        <h2>Favorite Movies</h2>
+        <p>Here are some of my favorite movies:</p>
+        <div>
+            <div class="movie-item">
+                <img src="pianist.jpg" alt="The Pianist">
+                <h3>The Pianist</h3>
+            </div>
+            <div class="movie-item">
+                <img src="lifeisbeautiful.jpg" alt="Life is Beautiful">
+                <h3>Life is Beautiful</h3>
+            </div>
+            <div class="movie-item">
+                <img src="schindlerlist.jpg" alt="Schindler's List">
+                <h3>Schindler's List</h3>
+            </div>
+            <div class="movie-item">
+                <img src="greenmile.jpg" alt="The Green Mile">
+                <h3>The Green Mile</h3>
+            </div>
+            <div class="movie-item">
+                <img src="greenbook.jpg" alt="Green Book">
+                <h3>Green Book</h3>
+            </div>
+        </div>
+
+        <h2>Favorite TV Series</h2>
+        <p>Here are some of my favorite TV series:</p>
+        <div>
+            <div class="series-item">
+                <img src="maisel.jpg" alt="The Marvelous Mrs. Maisel">
+                <h3>The Marvelous Mrs. Maisel</h3>
+            </div>
+            <div class="series-item">
+                <img src="friends.jpg" alt="Friends">
+                <h3>Friends</h3>
+            </div>
+            <div class="series-item">
+                <img src="us.jpg" alt="This Is Us">
+                <h3>This Is Us</h3>
+            </div>
+        </div>
+
+        <!-- Music Player -->
+        <div class="music-player">
+            <h3>Listen to Some Music!</h3>
+            <audio id="myAudio" controls>
+                <source src="your-music-file.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="play-pause-buttons">
+                <button onclick="togglePlayPause(true)">Play</button>
+                <button onclick="togglePlayPause(false)">Pause</button>
+            </div>
+        </div>
+
+        <!-- Game Section -->
+        <div class="game-section">
+            <h3>Play a Fun Game!</h3>
+            <iframe src="https://www.miniclip.com/games/dummy/en/" width="400" height="400" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Zeynab Vafaei Sadr. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Play/Pause Buttons -->
+    <script>
+        const audio = document.getElementById('myAudio');
+
+        function togglePlayPause(isPlay) {
+            if (isPlay) {
+                audio.play();
+            } else {
+                audio.pause();
+            }
+        }
+    </script>
+</body>
+</html>
